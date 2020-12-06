@@ -11,13 +11,14 @@ import (
 
 // CustomerCreate creates a new instance of type Customer
 func (client *Client) CustomerCreate(ctx context.Context, draft *CustomerDraft, opts ...RequestOption) (result *Customer, err error) {
+	result = &Customer{}
 	params := url.Values{}
 	for _, opt := range opts {
 		opt(&params)
 	}
 
 	endpoint := "customers"
-	err = client.create(ctx, endpoint, params, draft, &result)
+	err = client.create(ctx, endpoint, params, draft, result)
 	if err != nil {
 		return nil, err
 	}
