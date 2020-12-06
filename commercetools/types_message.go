@@ -1360,6 +1360,9 @@ func (obj CustomerCompanyNameSetMessagePayload) MarshalJSON() ([]byte, error) {
 	}{Type: "CustomerCompanyNameSet", Alias: (*Alias)(&obj)})
 }
 
+type CustomerCreatedResponse struct {
+	Customer *Customer `json:"customer"`
+}
 // CustomerCreatedMessage implements the interface Message
 type CustomerCreatedMessage struct {
 	Version                         int                      `json:"version"`

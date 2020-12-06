@@ -10,8 +10,8 @@ import (
 )
 
 // CustomerCreate creates a new instance of type Customer
-func (client *Client) CustomerCreate(ctx context.Context, draft *CustomerDraft, opts ...RequestOption) (result *CustomerCreatedMessage, err error) {
-	result = &CustomerCreatedMessage{}
+func (client *Client) CustomerCreate(ctx context.Context, draft *CustomerDraft, opts ...RequestOption) (result *CustomerCreatedResponse, err error) {
+	result = &CustomerCreatedResponse{}
 	params := url.Values{}
 	for _, opt := range opts {
 		opt(&params)
