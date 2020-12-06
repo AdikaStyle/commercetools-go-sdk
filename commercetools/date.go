@@ -21,7 +21,7 @@ func NewDate(year int, month time.Month, day int) Date {
 
 // MarshalJSON marshals into the commercetools date format
 func (d *Date) MarshalJSON() ([]byte, error) {
-	value := fmt.Sprintf("\"%04d-%02d-%02d\"", d.Year, d.Month, d.Day)
+	value := fmt.Sprintf("%04d-%02d-%02d", d.Year, d.Month, d.Day)
 	return []byte(strconv.Quote(value)), nil
 }
 
