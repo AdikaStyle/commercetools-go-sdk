@@ -269,7 +269,8 @@ func processResponse(resp *http.Response, output interface{}) error {
 
 	switch resp.StatusCode {
 	case 200, 201:
-		return json.Unmarshal(body, output)
+		err := json.Unmarshal(body, output)
+		return err
 	default:
 		if resp.StatusCode == 404 && len(body) == 0 {
 			return ErrorResponse{
