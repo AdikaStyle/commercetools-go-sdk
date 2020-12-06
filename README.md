@@ -1,9 +1,9 @@
 # commercetools-go-sdk
 
-[![Build Status](https://github.com/labd/commercetools-go-sdk/workflows/Go%20Tests/badge.svg)](https://github.com/labd/commercetools-go-sdk/workflows/)
-[![codecov](https://codecov.io/gh/LabD/commercetools-go-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/LabD/commercetools-go-sdk)
-[![Go Report Card](https://goreportcard.com/badge/github.com/labd/commercetools-go-sdk)](https://goreportcard.com/report/github.com/labd/commercetools-go-sdk)
-[![GoDoc](https://godoc.org/github.com/labd/commercetools-go-sdk?status.svg)](https://godoc.org/github.com/labd/commercetools-go-sdk)
+[![Build Status](https://github.com/AdikaStyle/commercetools-go-sdk/workflows/Go%20Tests/badge.svg)](https://github.com/AdikaStyle/commercetools-go-sdk/workflows/)
+[![codecov](https://codecov.io/gh/AdikaStyle/commercetools-go-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/AdikaStyle/commercetools-go-sdk)
+[![Go Report Card](https://goreportcard.com/badge/github.com/AdikaStyle/commercetools-go-sdk)](https://goreportcard.com/report/github.com/AdikaStyle/commercetools-go-sdk)
+[![GoDoc](https://godoc.org/github.com/AdikaStyle/commercetools-go-sdk?status.svg)](https://godoc.org/github.com/AdikaStyle/commercetools-go-sdk)
 
 The Commercetools Go SDK is automatically generated based on the official [API specifications](https://github.com/commercetools/commercetools-api-reference) 
 of Commercetools. It should therefore be nearly feature complete.
@@ -26,7 +26,7 @@ import (
     "math/rand"
     "time"
     
-    "github.com/labd/commercetools-go-sdk/commercetools"
+    "github.com/AdikaStyle/commercetools-go-sdk/commercetools"
 )
 
 func main() {

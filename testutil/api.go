@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/labd/commercetools-go-sdk/commercetools"
+	"github.com/AdikaStyle/commercetools-go-sdk/commercetools"
 	"golang.org/x/oauth2"
 )
 

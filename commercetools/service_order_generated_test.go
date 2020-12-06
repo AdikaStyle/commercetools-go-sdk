@@ -4,8 +4,8 @@ package commercetools_test
 
 import (
 	"context"
-	"github.com/labd/commercetools-go-sdk/commercetools"
-	"github.com/labd/commercetools-go-sdk/testutil"
+	"github.com/AdikaStyle/commercetools-go-sdk/commercetools"
+	"github.com/AdikaStyle/commercetools-go-sdk/testutil"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

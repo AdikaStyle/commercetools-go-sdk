@@ -1,6 +1,6 @@
-module github.com/labd/commercetools-go-sdk
+module github.com/AdikaStyle/commercetools-go-sdk
 
-go 1.14
+go 1.15
 
 require (
 	github.com/appscode/go-querystring v0.0.0-20170504095604-0126cfb3f1dc

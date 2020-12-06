@@ -5,10 +5,10 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/labd/commercetools-go-sdk/commercetools"
+	"github.com/AdikaStyle/commercetools-go-sdk/commercetools"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/labd/commercetools-go-sdk/testutil"
+	"github.com/AdikaStyle/commercetools-go-sdk/testutil"
 )
 
 func TestProductProjectionSearch(t *testing.T) {

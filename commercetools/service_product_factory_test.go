@@ -3,7 +3,7 @@ package commercetools_test
 import (
 	"time"
 
-	"github.com/labd/commercetools-go-sdk/commercetools"
+	"github.com/AdikaStyle/commercetools-go-sdk/commercetools"
 )
 
 func createExampleProduct() *commercetools.Product {
