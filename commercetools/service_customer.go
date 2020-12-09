@@ -82,8 +82,8 @@ func (client *Client) CustomerGetWithEmailToken(ctx context.Context, emailToken 
 }
 
 // CustomerGetWithID for type Customer
-func (client *Client) CustomerGetWithID(ctx context.Context, id string, opts ...RequestOption) (result *CustomerPagedQueryResponse, err error) {
-	result = &CustomerPagedQueryResponse{}
+func (client *Client) CustomerGetWithID(ctx context.Context, id string, opts ...RequestOption) (result *CustomerResponse, err error) {
+	result = &CustomerResponse{}
 	params := url.Values{}
 	for _, opt := range opts {
 		opt(&params)

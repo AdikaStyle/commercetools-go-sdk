@@ -43,7 +43,7 @@ func TestGeneratedCustomerGetWithEmailToken(t *testing.T) {
 }
 
 func TestGeneratedCustomerGetWithID(t *testing.T) {
-	responseData := ` {"results":[ {
+	responseData := ` { "customer": {
 	      "addresses": [],
 	      "email": "<random>@example.com",
 	      "firstName": "John",
@@ -53,8 +53,8 @@ func TestGeneratedCustomerGetWithID(t *testing.T) {
 	      "password": "secret123",
 	      "version": 1,
 	      "createdAt": "2015-07-06T13:22:33.339Z",
-	      "lastModifiedAt": "2015-07-06T13:22:33.339Z" }
-	] }`
+	      "lastModifiedAt": "2015-07-06T13:22:33.339Z"
+	} }`
 	client, server := testutil.MockClient(t, responseData, nil, nil)
 	defer server.Close()
 	customer, err := client.CustomerGetWithID(context.TODO(), "dummy-id")
@@ -62,15 +62,15 @@ func TestGeneratedCustomerGetWithID(t *testing.T) {
 		t.Fatal(err)
 	}
 	assert.NotNil(t, customer)
-	assert.NotNil(t, customer.Results[0].Version)
-	assert.NotEmpty(t, customer.Results[0].Password)
-	assert.NotEmpty(t, customer.Results[0].LastName)
-	assert.NotEmpty(t, customer.Results[0].LastModifiedAt)
-	assert.False(t, customer.Results[0].IsEmailVerified)
-	assert.NotEmpty(t, customer.Results[0].ID)
-	assert.NotEmpty(t, customer.Results[0].FirstName)
-	assert.NotEmpty(t, customer.Results[0].Email)
-	assert.NotEmpty(t, customer.Results[0].CreatedAt)
+	assert.NotNil(t, customer.Customer.Version)
+	assert.NotEmpty(t, customer.Customer.Password)
+	assert.NotEmpty(t, customer.Customer.LastName)
+	assert.NotEmpty(t, customer.Customer.LastModifiedAt)
+	assert.False(t, customer.Customer.IsEmailVerified)
+	assert.NotEmpty(t, customer.Customer.ID)
+	assert.NotEmpty(t, customer.Customer.FirstName)
+	assert.NotEmpty(t, customer.Customer.Email)
+	assert.NotEmpty(t, customer.Customer.CreatedAt)
 
 }
 
