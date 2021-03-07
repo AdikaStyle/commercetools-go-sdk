@@ -196,7 +196,7 @@ type MyShoppingList struct {
 	LineItems                       []ShoppingListLineItem `json:"lineItems,omitempty"`
 	LastModifiedBy                  *LastModifiedBy        `json:"lastModifiedBy,omitempty"`
 	LastModifiedAt                  time.Time              `json:"lastModifiedAt"`
-	Key                             string                 `json:"key,omitempty"`
+	Key                             *string                 `json:"key,omitempty"`
 	ID                              string                 `json:"id"`
 	Description                     *LocalizedString       `json:"description,omitempty"`
 	DeleteDaysAfterLastModification int                    `json:"deleteDaysAfterLastModification,omitempty"`
