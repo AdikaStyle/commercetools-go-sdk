@@ -205,6 +205,7 @@ type MyShoppingList struct {
 	CreatedBy                       *CreatedBy             `json:"createdBy,omitempty"`
 	CreatedAt                       time.Time              `json:"createdAt"`
 	AnonymousID                     string                 `json:"anonymousId,omitempty"`
+
 }
 
 // ShoppingList is of type BaseResource
