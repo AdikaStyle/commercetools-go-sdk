@@ -39,7 +39,6 @@ type QueryInput struct {
 
 	Limit  int
 	Offset int
-	FilterQuery string
 }
 
 func (qi QueryInput) toParams() (values url.Values) {
@@ -65,9 +64,6 @@ func (qi QueryInput) toParams() (values url.Values) {
 		values.Set("offset", strconv.Itoa(qi.Offset))
 	}
 
-	if qi.FilterQuery != ""{
-		values.Set("filter", qi.FilterQuery)
-	}
 
 	return
 }
