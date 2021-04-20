@@ -1017,7 +1017,7 @@ func (obj MyCartSetLocaleAction) MarshalJSON() ([]byte, error) {
 
 // MyCartSetShippingAddressAction implements the interface MyCartUpdateAction
 type MyCartSetShippingAddressAction struct {
-	Address *Address `json:"address,omitempty"`
+	Address *AddressDraft `json:"address,omitempty"`
 }
 
 // MarshalJSON override to set the discriminator value
