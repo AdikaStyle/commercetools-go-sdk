@@ -526,32 +526,62 @@ func mapDiscriminatorTypedMoneyDraft(input interface{}) (TypedMoneyDraft, error)
 
 // Address is a standalone struct
 type Address struct {
-	Title                 string      `json:"title,omitempty"`
-	StreetNumber          string      `json:"streetNumber,omitempty"`
-	StreetName            string      `json:"streetName,omitempty"`
-	State                 string      `json:"state,omitempty"`
-	Salutation            string      `json:"salutation,omitempty"`
-	Region                string      `json:"region,omitempty"`
-	PostalCode            string      `json:"postalCode,omitempty"`
-	Phone                 string      `json:"phone,omitempty"`
-	POBox                 string      `json:"pOBox,omitempty"`
-	Mobile                string      `json:"mobile,omitempty"`
-	LastName              string      `json:"lastName,omitempty"`
-	Key                   string      `json:"key,omitempty"`
-	ID                    string      `json:"id,omitempty"`
-	FirstName             string      `json:"firstName,omitempty"`
-	Fax                   string      `json:"fax,omitempty"`
-	ExternalID            string      `json:"externalId,omitempty"`
-	Email                 string      `json:"email,omitempty"`
-	Department            string      `json:"department,omitempty"`
-	Country               CountryCode `json:"country"`
-	Company               string      `json:"company,omitempty"`
-	City                  string      `json:"city,omitempty"`
-	Building              string      `json:"building,omitempty"`
-	Apartment             string      `json:"apartment,omitempty"`
-	AdditionalStreetInfo  string      `json:"additionalStreetInfo,omitempty"`
-	AdditionalAddressInfo string      `json:"additionalAddressInfo,omitempty"`
+	Title                 string        `json:"title,omitempty"`
+	StreetNumber          string        `json:"streetNumber,omitempty"`
+	StreetName            string        `json:"streetName,omitempty"`
+	State                 string        `json:"state,omitempty"`
+	Salutation            string        `json:"salutation,omitempty"`
+	Region                string        `json:"region,omitempty"`
+	PostalCode            string        `json:"postalCode,omitempty"`
+	Phone                 string        `json:"phone,omitempty"`
+	POBox                 string        `json:"pOBox,omitempty"`
+	Mobile                string        `json:"mobile,omitempty"`
+	LastName              string        `json:"lastName,omitempty"`
+	Key                   string        `json:"key,omitempty"`
+	ID                    string        `json:"id,omitempty"`
+	FirstName             string        `json:"firstName,omitempty"`
+	Fax                   string        `json:"fax,omitempty"`
+	ExternalID            string        `json:"externalId,omitempty"`
+	Email                 string        `json:"email,omitempty"`
+	Department            string        `json:"department,omitempty"`
+	Country               CountryCode   `json:"country"`
+	Company               string        `json:"company,omitempty"`
+	City                  string        `json:"city,omitempty"`
+	Building              string        `json:"building,omitempty"`
+	Apartment             string        `json:"apartment,omitempty"`
+	AdditionalStreetInfo  string        `json:"additionalStreetInfo,omitempty"`
+	AdditionalAddressInfo string        `json:"additionalAddressInfo,omitempty"`
 	Custom                *CustomFields `json:"custom,omitempty"`
+}
+
+// Address is a standalone struct
+type AddressDraft struct {
+	Title                 string             `json:"title,omitempty"`
+	StreetNumber          string             `json:"streetNumber,omitempty"`
+	StreetName            string             `json:"streetName,omitempty"`
+	State                 string             `json:"state,omitempty"`
+	Salutation            string             `json:"salutation,omitempty"`
+	Region                string             `json:"region,omitempty"`
+	PostalCode            string             `json:"postalCode,omitempty"`
+	Phone                 string             `json:"phone,omitempty"`
+	POBox                 string             `json:"pOBox,omitempty"`
+	Mobile                string             `json:"mobile,omitempty"`
+	LastName              string             `json:"lastName,omitempty"`
+	Key                   string             `json:"key,omitempty"`
+	ID                    string             `json:"id,omitempty"`
+	FirstName             string             `json:"firstName,omitempty"`
+	Fax                   string             `json:"fax,omitempty"`
+	ExternalID            string             `json:"externalId,omitempty"`
+	Email                 string             `json:"email,omitempty"`
+	Department            string             `json:"department,omitempty"`
+	Country               CountryCode        `json:"country"`
+	Company               string             `json:"company,omitempty"`
+	City                  string             `json:"city,omitempty"`
+	Building              string             `json:"building,omitempty"`
+	Apartment             string             `json:"apartment,omitempty"`
+	AdditionalStreetInfo  string             `json:"additionalStreetInfo,omitempty"`
+	AdditionalAddressInfo string             `json:"additionalAddressInfo,omitempty"`
+	Custom                *CustomFieldsDraft `json:"custom,omitempty"`
 }
 
 // Asset is a standalone struct
