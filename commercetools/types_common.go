@@ -551,6 +551,7 @@ type Address struct {
 	Apartment             string      `json:"apartment,omitempty"`
 	AdditionalStreetInfo  string      `json:"additionalStreetInfo,omitempty"`
 	AdditionalAddressInfo string      `json:"additionalAddressInfo,omitempty"`
+	Custom                *CustomFields `json:"custom,omitempty"`
 }
 
 // Asset is a standalone struct
