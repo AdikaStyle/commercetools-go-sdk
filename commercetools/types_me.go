@@ -852,7 +852,7 @@ func (obj MyCartRemovePaymentAction) MarshalJSON() ([]byte, error) {
 
 // MyCartSetBillingAddressAction implements the interface MyCartUpdateAction
 type MyCartSetBillingAddressAction struct {
-	Address *Address `json:"address,omitempty"`
+	Address *AddressDraft `json:"address,omitempty"`
 }
 
 // MarshalJSON override to set the discriminator value
